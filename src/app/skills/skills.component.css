@@ -1,0 +1,13 @@
+.example-header-image {
+    padding-top: 1px;
+    background-image: url('../../assets/hez.png');
+    background-size: cover;
+  }
+
+  .mat-card-avatar {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+    }

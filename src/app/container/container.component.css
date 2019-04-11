@@ -1,0 +1,26 @@
+.container{
+    background-color: white
+}
+.example-card {
+    max-width: 700px;
+  }
+
+  .example-card2 {
+    max-width: 700px;
+  }
+  
+  .example-header-image {
+    padding-top: 1px;
+    background-image: url('https://lh3.googleusercontent.com/a-/AAuE7mD_kuLupkcoS1uLoOmNQVGQv_nzC-Yg3oHzf0oUbmA=s192');
+    background-size: cover;
+  }
+
+  .mat-card-avatar {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+    }
+
+    p { font-family: Georgia, Times, "Times New Roman", serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 200; line-height:30px; }

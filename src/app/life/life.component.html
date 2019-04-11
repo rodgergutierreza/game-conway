@@ -1,0 +1,39 @@
+<mat-card class="example-card2">
+  <mat-card-header>
+    <mat-card-subtitle>
+      <h6>JUEGO DE LA VIDA</h6>
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <button mat-stroked-button color="primary" (click)="jugar()"> JUGAR</button>
+    <br> <br>
+    <div class="row">
+      <div class="col-md-12">
+        <mat-card-header>
+          <mat-card-subtitle>
+          </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="col-md-12 table-responsive">
+            <table>
+              <tr *ngFor="let row of tablero;let i = index">
+                <td *ngFor="let td of tablero[i];let j = index" style="width: 20px !important">
+                  <ng-container *ngIf="!td;else blanco">
+                    <div class="borde" style="background-color: white;width: 20px !important;height: 20px !important;">
+                  
+                    </div>
+                  </ng-container>
+                  <ng-template #blanco>
+                    <div style="background-color: black;width: 20px !important;height:20px !important">
+        
+                    </div>
+                  </ng-template>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </mat-card-content>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
